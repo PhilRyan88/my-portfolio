@@ -1,0 +1,12 @@
+.cursor {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.325);
+  position: fixed;
+}
+.description {
+  position: fixed;
+  top: 8rem;
+  left: 18rem;
+}

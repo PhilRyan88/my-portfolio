@@ -6,9 +6,8 @@ import Services from "./components/Services";
 function App() {
   return (
     <div>
-      <h1>My Portfolio</h1>
-      <Home />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
       </Routes>
     </div>
