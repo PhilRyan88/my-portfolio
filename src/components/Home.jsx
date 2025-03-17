@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import dp from "../assets/dp.jpg";
 import gsap from "gsap";
 import "../styles/Home.css";
-
+// import Loader from "./Loader";
 function Home() {
   const img = useRef(null);
   const tag = useRef(null);
@@ -35,6 +35,7 @@ function Home() {
   }, []);
   return (
     <div>
+      {/* <Loader /> */}
       <div className="cursor" ref={cursor}></div>
       <Navbar />
       <img ref={img} className="dp" src={dp} alt="" height="250rem" />
