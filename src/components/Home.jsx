@@ -41,6 +41,11 @@ function Home() {
       <img ref={img} className="dp" src={dp} alt="" height="250rem" />
       <div className="description">
         <span ref={tag}>Web Developer</span>
+        <p>
+          I'm a creative developer with a passion for blending technical
+          expertise with creative edge. Driven by curiosity, I always try to
+          explore and learn new skills.
+        </p>
       </div>
     </div>
   );
