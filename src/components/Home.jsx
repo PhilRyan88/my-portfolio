@@ -3,7 +3,8 @@ import Navbar from "./Navbar";
 import dp from "../assets/dp.jpg";
 import gsap from "gsap";
 import "../styles/Home.css";
-// import Loader from "./Loader";
+import SplashCursor from "./SplashCursor/SplashCursor";
+
 function Home() {
   const img = useRef(null);
   const tag = useRef(null);
@@ -19,23 +20,11 @@ function Home() {
       duration: 1,
       opacity: 1,
     });
-    const moveCursor = (e) => {
-      gsap.to(cursor.current, {
-        x: e.clientX,
-        y: e.clientY,
-        duration: 0.3,
-        ease: "power2.out",
-      });
-    };
-    window.addEventListener("mousemove", moveCursor);
-
-    return () => {
-      window.addEventListener("mousemove", moveCursor);
-    };
   }, []);
   return (
     <div>
-      {/* <Loader /> */}
+      {/* <SplashCursor /> */}
+
       <div className="cursor" ref={cursor}></div>
       <Navbar />
       <img ref={img} className="dp" src={dp} alt="" height="250rem" />
