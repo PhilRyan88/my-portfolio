@@ -1,12 +1,16 @@
 import React from "react";
-import "../styles/Loader.css";
+import BlurText from "./BlurText/BlurText";
 
 const Loader = () => {
   return (
-    <div className="lod-cont">
-      <h1>
-        <center>Hi Guys</center>
-      </h1>
+    <div className="lod-cont flex justify-center items-center h-screen bg-black text-white">
+      <BlurText
+        text="Crafting Code, Creating Experiences!"
+        delay={150}
+        animateBy="words"
+        direction="top"
+        className="text-7xl font-bold"
+      />
     </div>
   );
 };
