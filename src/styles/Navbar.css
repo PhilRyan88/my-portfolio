@@ -18,3 +18,7 @@
     cursor: pointer;
   }
 }
+.nav-container {
+  position: relative;
+  bottom: 20rem;
+}
