@@ -84,6 +84,13 @@ function Home() {
               <Navbar />
               <img ref={img} className="dp" src={dp} alt="" width="220rem" />
               <div className="description">
+                <div className="web-dev">
+                  {"Web Developer".split("").map((char, index) => (
+                    <span key={index} className="letter">
+                      {char}
+                    </span>
+                  ))}
+                </div>
                 <p>
                   I'm a creative developer with a passion for blending technical
                   expertise with creative edge. Driven by curiosity, I always
