@@ -6,6 +6,12 @@ import "../styles/Home.css";
 import Loader from "./Loader";
 
 function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false); // Controls when to show content
+  const lettersRef = useRef([]);
+  const titleRef = useRef(null);
+  const img = useRef(null);
+
   useEffect(() => {
     gsap.to(".loader", {
       opacity: 0,
