@@ -82,7 +82,7 @@ function Home() {
           {showContent && (
             <>
               <Navbar />
-
+              <img ref={img} className="dp" src={dp} alt="" width="220rem" />
               <div className="description">
                 <div className="web-dev">
                   {"Web Developer".split("").map((char, index) => (
